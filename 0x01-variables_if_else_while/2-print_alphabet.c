@@ -10,7 +10,7 @@ int main(void)
 {
 	int ch;
 
-	for (ch = "a"; ch <= "z"; ch++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		ch = tolower(ch);
 		puctchar(ch);
