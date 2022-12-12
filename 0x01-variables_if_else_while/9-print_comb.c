@@ -11,7 +11,7 @@ int main(void)
 
 	for (ch = '0'; ch <= '9'; ch++)
 	{
-		if (ch > '0' && ch < '9')
+		if (ch > '0' && ch <= '9')
 		{
 			putchar(',');
 			putchar(' ');
