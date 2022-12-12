@@ -14,8 +14,8 @@ int main(void)
 	{
 		for (second = first + 1; second <= 9; second++)
 		{
-			putchar(first);
-			putchar(second);
+			putchar(first + '0');
+			putchar(second + '0');
 		}
 	}
 	putchar('\n');
