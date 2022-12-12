@@ -21,10 +21,14 @@ int main(void)
 				putchar(' ');
 				putchar(second / 10 + '0');
 				putchar(second % 10 + '0');
+
+				if (first * 100 + second != 9899)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
-		putchar(',');
-		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
