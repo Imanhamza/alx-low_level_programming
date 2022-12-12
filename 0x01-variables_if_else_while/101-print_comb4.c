@@ -20,7 +20,7 @@ int main(void)
 				putchar(first + '0');
 				putchar(second + '0');
 				putchar(third + '0');
-				if (first == 7 && second == 8 && third == 9)
+				if (first < 8 && second < 8 && third < 8)
 				{
 					putchar(',');
 					putchar(' ');
