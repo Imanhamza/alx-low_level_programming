@@ -10,15 +10,18 @@ int main(void)
 	int first;
 	int second;
 
-	for (first = 0; first <= 100; first++)
+	for (first = 0; first < 100; first++)
 	{
-		for (second = first + 1; second <= 100; second++)
+		for (second = 0; second < 100; second++)
 		{
-			putchar(first + '0');
-			putchar(first + '0');
-			putchar(' ');
-			putchar(second + '0');
-			putchar(second + '0');
+			if (second > first)
+			{
+				putchar(first / 10 + '0');
+				putchar(first % 10 + '0');
+				putchar(' ');
+				putchar(second / 10 + '0');
+				putchar(second % 10 + '0');
+			}
 		}
 		putchar(',');
 		putchar(' ');
