@@ -8,10 +8,9 @@
 int main(void)
 {
 	char ch[] = "_putchar\n";
-	int size = sizeof(ch);
 	int i;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < 9; i++)
 	{
 		_putchar(ch[i]);
 	}
