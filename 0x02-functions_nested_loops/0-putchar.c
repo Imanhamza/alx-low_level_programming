@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	char ch[] = "_putchar";
+	char ch[] = "_putchar\n";
 	int size = sizeof(ch);
 	int i;
 
