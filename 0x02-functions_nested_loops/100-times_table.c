@@ -3,7 +3,7 @@
 /**
  * print_times_table - prints n times table, starting with 0
  * @n: number of tables
- * Return: o (Success)
+ * Return: 0 (Success)
  */
 
 void print_times_table(int n)
@@ -24,13 +24,13 @@ void print_times_table(int n)
 				{
 					_putchar('0' + multi);
 				}
-				else if (result >= 10)
+				else if (multi >= 10)
 				{
 					_putchar(' ');
 					_putchar('0' + (multi / 10));
 					_putchar('0' + (multi % 10));
 				}
-				else if (result >= 100)
+				else if (multi >= 100)
 				{
 					_putchar(' ');
 					_putchar('0' + (multi / 100));
