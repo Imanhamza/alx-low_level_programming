@@ -6,10 +6,8 @@
  * Return : the value of the last digit
  */
 
-int print_last_digit(int i)
+int print_last_digit(int i[])
 {
-	int i[];
-
 	return (i[-1]);
 
 }
