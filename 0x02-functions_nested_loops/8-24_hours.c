@@ -15,9 +15,9 @@ void jack_bauer(void)
 		{
 			if (first <= 9 || second <= 9; second++)
 			{
-				_putchar((first + '0') + ':' + (second + '0'))
+				_putchar((first + '0') + ':' + (second + '0'));
 			}
-			_putchar(first + ':' + second)
+			_putchar(first + ':' + second);
 		}
 	}
 }
