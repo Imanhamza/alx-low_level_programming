@@ -17,7 +17,7 @@ void print_times_table(int n)
 			_putchar(48);
 			for (j = 1; j <= n; j++)
 			{
-				outp = i * j;
+				out = i * j;
 				_putchar(44);
 				_putchar(32);
 				if (out <= 9)
@@ -26,7 +26,7 @@ void print_times_table(int n)
 					_putchar(32);
 					_putchar(out + 48);
 				}
-				else if (outp <= 99)
+				else if (out <= 99)
 				{
 					_putchar(32);
 					_putchar((out / 10) + 48);
