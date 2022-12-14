@@ -3,7 +3,7 @@
 /**
  * print_last_digit - print the last digit of a certain number
  * @i: the number under test
- * Return : 0 (Success)
+ * Return: 0 (Success)
  */
 
 int print_last_digit(int i)
