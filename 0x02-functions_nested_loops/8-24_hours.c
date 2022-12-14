@@ -11,7 +11,7 @@ void jack_bauer(void)
 
 	for (first = 0; first <= 24; first++)
 	{
-		for (second = 0; second <= 60)
+		for (second = 0; second <= 60; second++)
 		{
 			if (first <= 9 || second <= 9)
 			{
