@@ -8,49 +8,51 @@
 
 void print_times_table(int n)
 {
-	if (n >= 0 && n <= 15)
+
+	if (n <= 15 && n > 0)
 	{
-		int i, j;
+		int i;
 
 		for (i = 0; i <= n; i++)
 		{
+			int j;
 
-			for (j = i; j <= n; j++)
+			for (j = 0; j <= n; j++)
 			{
 				int multi = i * j;
-
 				if (j == 0)
 				{
+					_putchar('0' + multi);
+				}
+				else if (result >= 10)
+				{
+					_putchar(' ');
+					_putchar('0' + (multi / 10));
+					_putchar('0' + (multi % 10));
+				}
+				else if (result >= 100)
+				{
+					_putchar(' ');
+					_putchar('0' + (multi / 100));
+					_putchar('0' + ((multi / 10) % 10));
+					_putchar('0' + (multi % 10));
+				}
+				else
+				{
+					_putchar(' ');
+					_putchar(' ');
 					_putchar(multi + '0');
 				}
-				else if ( multi < 10 && j != 0)
-
+				if (j != n)
 				{
 					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar((multi % 10) + '0');
-				}
-				else if (multi >= 10 && multi < 100)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar((multi / 10) + '0');
-					_putchar((multi % 10) + '0');
-				}
-				else if (multi >= 100)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar((multi / 100) + '0');
-					_putchar(((multi / 10) % 10) + '0');
-					_putchar((multi % 10) + '0');
 				}
 			}
 			_putchar('\n');
 		}
 	}
-
+	else
+	{
+		_putchar('\n');
+	}
 }
