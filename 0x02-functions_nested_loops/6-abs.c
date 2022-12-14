@@ -5,11 +5,13 @@
  * @i: number under test
  */
 
-int _abs(int i)
+int _abs(int)
 {
+	int i;
+
 	if (i < 0)
 	{
-		return (i * -1);
+		return (-i);
 	}
 	return (i);
 
