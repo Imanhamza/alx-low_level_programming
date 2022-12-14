@@ -13,7 +13,7 @@ void jack_bauer(void)
 	{
 		for (second = 0; second <= 60; second++)
 		{
-			if (first <= 9 || second <= 9)
+			if (first <= 9 || second <= 9; second++)
 			{
 				_putchar((first + '0') + ':' + (second + '0'))
 			}
