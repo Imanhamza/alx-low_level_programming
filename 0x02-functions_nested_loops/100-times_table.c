@@ -15,6 +15,7 @@ void print_times_table(int n)
 
 		for (i = 0; i <= n; i++)
 		{
+
 			for (j = i; j <= n; j++)
 			{
 				int multi = i * j;
@@ -49,6 +50,7 @@ void print_times_table(int n)
 			}
 			_putchar('\n');
 		}
+		_putchar('\n');
 	}
 	_putchar('\n');
 }
