@@ -26,15 +26,15 @@ void print_times_table(int n)
 				else if (multi >= 10)
 				{
 					_putchar(' ');
-					_putchar((multi / 10) + '0');
-					_putchar((multi % 10) + '0');
+					_putchar('0' + (multi / 10));
+					_putchar('0' + (multi % 10));
 				}
 				else if (multi >= 100)
 				{
 					_putchar(' ');
-					_putchar((multi / 100) + '0');
-					_putchar(((multi / 10) % 10) + '0');
-					_putchar((multi % 10) + '0');
+					_putchar('0' + (multi / 100));
+					_putchar('0' + ((multi / 10) % 10));
+					_putchar('0' + (multi % 10));
 				}
 				else
 				{
