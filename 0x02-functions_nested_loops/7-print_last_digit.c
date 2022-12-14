@@ -8,7 +8,7 @@
 
 int print_last_digit(int i)
 {
-	int num[] = i
+	int num[] = i;
 	return (num[-1]);
 
 }
