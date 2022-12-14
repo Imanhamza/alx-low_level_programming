@@ -17,12 +17,14 @@ void print_to_98(int n)
 			_putchar(',');
 			_putchar(' ');
 		}
+	} else
+	{
+		for (i = n; i >= 98; i--)
+		{
+			_putchar(i);
+			_putchar(',');
+			_putchar(' ');
+		}
 	}
-	 for (i = n; i >= 98; i--)
-	 {
-		 _putchar(i);
-		 _putchar(',');
-		 _putchar(' ');
-	 }
-	 _putchar('\n');
+	_putchar('\n');
 }
