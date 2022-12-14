@@ -6,16 +6,16 @@
  */
 int main(void)
 {
-	int i, bool, bool1;
+	int i, bool1, bool2;
 	long int num1, num2, fn, fn1, num11, num22;
 
 	num1 = 1;
 	num2 = 2;
-	bool = bool1 = 1;
+	bool1 = bool2 = 1;
 	printf("%ld, %ld", num1, num2);
 	for (i = 0; i < 96; i++)
 	{
-		if (bool)
+		if (bool1)
 		{
 			fn = num1 + num2;
 			printf(", %ld", fn);
@@ -24,13 +24,13 @@ int main(void)
 		}
 		else
 		{
-			if (bool1)
+			if (bool2)
 			{
 				num11 = num1 % 1000000000;
 				num22 = num2 % 1000000000;
 				num1 = num1 / 1000000000;
 				num2 = num2 / 1000000000;
-				boolean1 = 0;
+				bool2 = 0;
 			}
 			fn1 = (num11 + num22);
 			fn = num1 + num2 + (fn1 / 1000000000);
@@ -41,8 +41,8 @@ int main(void)
 			num2 = fn;
 			num22 = (fn1 % 1000000000);
 		}
-		if (((num1 + num2) < 0) && bool == 1)
-			bool = 0;
+		if (((num1 + num2) < 0) && bool1 == 1)
+			bool1 = 0;
 	}
 	printf("\n");
 	return (0);
