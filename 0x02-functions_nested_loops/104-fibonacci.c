@@ -1,24 +1,49 @@
 #include <stdio.h>
 
 /**
- *main - prints first 98 fibonnacci numbers
- *Return: 0 (success)
+ * main - program that prints the first 98 Fibonacci
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	long int i, num1 = 1, num2 = 2, sum = 0;
+	int i, bool, bool1;
+	long int num1, num2, fn, fn1, num11, num22;
 
-	for (i = 1; i < 98; i++)
+	num1 = 1;
+	num2 = 2;
+	bool = bool1 = 1;
+	printf("%ld, %ld", num1, num2);
+	for (i = 0; i < 96; i++)
 	{
-		printf("%ld, ", num1);
-		sum = num1 + num2;
-		num1 = num2;
-		num2 = sum;
-		if (i == 97)
+		if (bool)
 		{
-			printf("%ld\n", num1);
+			fn = num1 + num2;
+			printf(", %ld", fn);
+			num1 = num2;
+			num2 = fn;
 		}
+		else
+		{
+			if (bool1)
+			{
+				num11 = num1 % 1000000000;
+				num22 = num2 % 1000000000;
+				num1 = num1 / 1000000000;
+				num2 = num2 / 1000000000;
+				boolean1 = 0;
+			}
+			fn1 = (num11 + num22);
+			fn = num1 + num2 + (fn1 / 1000000000);
+			printf(", %ld", fn);
+			printf("%ld", fn1 % 1000000000);
+			num1 = num2;
+			num11 = num22;
+			num2 = fn;
+			num22 = (fn1 % 1000000000);
+		}
+		if (((num1 + num2) < 0) && bool == 1)
+			bool = 0;
 	}
-return (0);
+	printf("\n");
+	return (0);
 }
