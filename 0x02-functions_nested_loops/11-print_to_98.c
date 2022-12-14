@@ -19,6 +19,8 @@ void print_to_98(int n)
 		}
 	} else
 	{
+		int i;
+
 		for (i = n; i >= 98; i--)
 		{
 			_putchar(i);
