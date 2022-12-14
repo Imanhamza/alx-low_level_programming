@@ -9,9 +9,9 @@ void jack_bauer(void)
 	int first;
 	int second;
 
-	for (first = 0; first <= 24; first++)
+	for (first = 0; first < 24; first++)
 	{
-		for (second = 0; second <= 60; second++)
+		for (second = 0; second < 60; second++)
 		{
 			_putchar(first / 10 + '0');
 			_putchar(first % 10 + '0');
