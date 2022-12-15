@@ -5,7 +5,7 @@
  * Return: 0 (Success)
  */
 
-ont main(void)
+int main(void)
 {
 	int i = 0;
 
