@@ -30,7 +30,7 @@ int main(void)
 		{
 			if(n == 99)
 			{
-				printf("Fizz");
+				printf("Fizz\n");
 			}
 			printf("%d ", n);
 		}
