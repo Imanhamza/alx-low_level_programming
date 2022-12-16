@@ -26,14 +26,15 @@ int main(void)
 		{
 			printf("FizzBuzz ");
 		}
+		else if (n == 1)
+		{
+			printf("%d", n);
+		}
 		else
 		{
-			if (n == 100)
-			{
-				printf("Buzz\n");
-			}
-			printf("%d ", n);
+			printf(" %d", n);
 		}
 	}
+	printf('\n');
 	return (0);
 }
