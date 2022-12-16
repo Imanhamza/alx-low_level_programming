@@ -12,7 +12,7 @@ int main(void)
 {
 	int n;
 
-	for (n = 0; n < 100; n++)
+	for (n = 0; n <= 100; n++)
 	{
 		if (n % 3 == 0 && n % 5 != 0)
 		{
@@ -28,9 +28,9 @@ int main(void)
 		}
 		else
 		{
-			if(n == 99)
+			if(n == 100)
 			{
-				printf("Fizz\n");
+				printf("Buzz\n");
 			}
 			printf("%d ", n);
 		}
