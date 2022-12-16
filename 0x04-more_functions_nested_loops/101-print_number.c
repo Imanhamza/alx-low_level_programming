@@ -12,17 +12,12 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		i = -n;
 		_putchar('-');
+		i = -n;
 	}
-	else
-	{
-		i = n;
-	}
-	if (i / 10 != 0)
+	if (i > 9)
 	{
 		print_number(i / 10);
 	}
-
-	_putchar((unsigned int) n % 10 + '0');
+	_putchar(i %10 + '0');
 }
