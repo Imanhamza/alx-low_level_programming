@@ -18,8 +18,28 @@ void rev_string(char *s)
 		size++;
 	}
 	/* loop to reverse the string starting from the size */
-	for (i = size - 1; i >= 0; i--)
+
+	size = size - 1;
+	int j = 0;
+	while (size > j)
 	{
-		return (s[i]);
+		swap_char(s + size, s + j);
+		size--;
+		j++;
+	}
+
+	/**
+	 *  * swap_int - swaps the values of two integers
+	 *   * @a: first integer
+	 *    * @b: second integer
+	 *     * Return: 0
+	 *      */
+
+	void swap_int(int *a, int *b)
+	{
+		int temp = *a;
+
+		*a = *b;
+		*b =temp;
 	}
 }
