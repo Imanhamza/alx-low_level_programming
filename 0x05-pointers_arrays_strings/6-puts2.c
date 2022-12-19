@@ -11,9 +11,9 @@ void puts2(char *str)
 	/* loop over the string and print it out*/
 	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i = i + 2)
 	{
 		_putchar(str[i]);
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
