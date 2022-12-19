@@ -11,7 +11,7 @@ int _atoi(char *s)
 	int sign = 1;
 	unsigned int n = 0;
 
-	do{
+	do {
 		if (*s == '-')
 		{
 			sign = -sign;
@@ -24,6 +24,6 @@ int _atoi(char *s)
 		{
 			break;
 		}
-	}while (*s++);
+	} while (*s++);
 	return (n * sign);
 }
