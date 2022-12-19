@@ -7,11 +7,15 @@
 
 void _puts(char *str)
 {
-	int size =  _strlen(str);
 	int i;
 
-	for (i = 0; i < size; i++)
+	/* loop to get all the char till the terminator */
+
+	for (i = 0; str[i] = '\0'; i++)
 	{
-		fprintf(stdout, str[i]);
+		_putchar(str[i]);
 	}
+	/* end the string with new end */
+	_putchar('\n');
+
 }
