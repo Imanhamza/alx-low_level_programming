@@ -6,6 +6,8 @@
  * Return: 0
  */
 
+void swap_int(int *a, int *b);
+
 void rev_string(char *s)
 {
 	/* find the siz of the string (with the terminator) */
@@ -20,12 +22,12 @@ void rev_string(char *s)
 	/* loop to reverse the string starting from the size */
 
 	size = size - 1;
-	int j = 0;
+	i = 0;
 	while (size > j)
 	{
-		swap_char(s + size, s + j);
+		swap_char(s + size, s + i);
 		size--;
-		j++;
+		i++;
 	}
 
 	/**
