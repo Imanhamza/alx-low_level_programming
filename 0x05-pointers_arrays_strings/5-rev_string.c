@@ -25,9 +25,9 @@ void rev_string(char *s)
 	while (size > i)
 	{
 		/* swap the chars */
-		char tmp = *s + size;
-		*s + size = *s + i;
-		*s + i = tmp;
+		char tmp = *(s + size);
+		*(s + size) = *(s + i);
+		*(s + i) = tmp;
 
 		size--;
 		i++;
