@@ -37,7 +37,7 @@ void rev_string(char *s)
 
 	void swap_char(char *a, char *b)
 	{
-		int temp = *a;
+		char temp = *a;
 
 		*a = *b;
 		*b =temp;
