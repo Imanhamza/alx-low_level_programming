@@ -7,12 +7,12 @@
  */
 int _strlen(char *s)
 {
-	int length = 0;
-	int i;
+	int length = 0; /* to get the length */
+	int i; /* counter for the char in the string without the terminator */
 
-	for (i = 0; s[i] != '\n'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		length = length + (i + 1);
+		length++;
 	}
 	return (length);
 
