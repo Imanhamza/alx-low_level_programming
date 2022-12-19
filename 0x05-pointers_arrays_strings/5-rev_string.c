@@ -24,23 +24,12 @@ void rev_string(char *s)
 	i = 0;
 	while (size > i)
 	{
-		swap_char(s + size, s + i);
+		/* swap the chars */
+		char tmp = *s + size;
+		*s + size = *s + i;
+		*s + i = tmp;
+
 		size--;
 		i++;
-	}
-
-	/**
-	 *  * swap_int - swaps the values of two integers
-	 *   * @a: first char
-	 *    * @b: second char
-	 *     * Return: 0
-	 *      */
-
-	void swap_char(char *a, char *b)
-	{
-		char temp = *a;
-
-		*a = *b;
-		*b =temp;
 	}
 }
