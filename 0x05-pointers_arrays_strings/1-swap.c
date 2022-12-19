@@ -9,6 +9,10 @@
 
 void swap_int(int *a, int *b)
 {
-	*a = &b;
-	*b = &a:
+	int temp = 0; /* to store the value of the first int */
+
+	temp = *a; /* make the temp is the address of the a*/
+	*a = *a; /* chamge the first one with the second */
+	*b = temp; /* then let the second int have the value of temp */
+
 }
