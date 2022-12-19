@@ -9,7 +9,7 @@
 void print_rev(char *s)
 {
 	/* find the size of the string without the terminator */
-	int size = _strlen(s);
+	int size = sizeof(s);
 	int i;
 
 	/* loop for reverse the string */
