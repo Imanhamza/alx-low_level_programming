@@ -6,6 +6,7 @@
  * Return: 0
  */
 
+void swap_char(char *a, char *b);
 void rev_string(char *s)
 {
 	/* find the siz of the string (with the terminator) */
