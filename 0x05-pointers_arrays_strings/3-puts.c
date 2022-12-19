@@ -11,7 +11,7 @@ void _puts(char *str)
 
 	/* loop to get all the char till the terminator */
 
-	for (i = 0; str[i] = '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
 	}
