@@ -17,7 +17,7 @@ void puts_half(char *str)
 	
 	/* declare the first of the second half */
 	start2 = (length - 1) / 2;
-	for (i = start2; i < length; i++)
+	for (i = start2 - 1; i < length; i++)
 	{
 		_putchar(str[i]);
 	}
