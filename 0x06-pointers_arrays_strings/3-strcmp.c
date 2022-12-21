@@ -14,7 +14,15 @@ int _strcmp(char *s1, char *s2)
 
 	for (i = 0; s1[i] && s2[i]; i++)
 	{
-		int diff = s1[i] - s2[i];
+		int diff;
+
+		if (s1[i] == s2[i])
+		{
+			diff = s1[i] - s2[i];
+			break;
+		}
+
+		diff = s1[i] - s2[i];
 		sum = sum + diff;
 	}
 	return (sum);
