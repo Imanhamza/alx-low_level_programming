@@ -5,7 +5,7 @@
  * @dest: first string
  * @src: second string
  * @n: number of characters to be copied
- * Return: dest
+ * Return: src
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -15,13 +15,13 @@ char *_strncpy(char *dest, char *src, int n)
 	int i = 0;
 	int j;
 
-	while (dest[i])
+	while (src[i])
 	{
 		i++;
 	}
 	for (j = 0; j < n && src[j] != '\0'; j++)
 	{
-		dest[i++] = src[j];
+		src[i++] = dest[j];
 	}
-	return (dest);
+	return (src);
 }
