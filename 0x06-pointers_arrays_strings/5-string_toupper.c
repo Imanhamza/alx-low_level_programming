@@ -2,22 +2,22 @@
 
 /**
  * *string_toupper - changes all lowercase letters of a string to uppercase.
- * Return: 0
+ * @c: pointer to a char
+ * Return: @c
  */
-char *string_toupper(char *)
+char *string_toupper(char *c)
 {
 	int i;
-	char ch;
 
-	for (i = 0; ch[i] != '\0'; i++)
+	for (i = 0; c[i] != '\0'; i++)
 	{
-		if (ch[i] >= 97 && ch[i] <= 123)
+		if (c[i] >= 97 && c[i] <= 123)
 		{
-			ch[i] = ch[i] - 32;
+			c[i] = c[i] - 32;
 		}
-		else if (ch[i] >= 65 && ch[i] <= 90)
+		else if (c[i] >= 65 && c[i] <= 90)
 		{
-			ch[i] = ch[i];
+			c[i] = c[i];
 		}
 	}
 }
