@@ -20,4 +20,5 @@ char *string_toupper(char *c)
 			c[i] = c[i];
 		}
 	}
+	return (c);
 }
