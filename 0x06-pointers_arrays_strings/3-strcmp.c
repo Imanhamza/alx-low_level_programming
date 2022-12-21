@@ -16,7 +16,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		for (j = 0; s2[j] != '\0'; j++)
 		{
-			sum = sum + (i - j);
+			sum = sum + (s1[i] - s2[j]);
 		}
 	}
 	return (sum);
