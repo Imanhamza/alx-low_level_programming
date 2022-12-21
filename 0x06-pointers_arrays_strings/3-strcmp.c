@@ -16,7 +16,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		for (j = 0; s2[j]; j++)
 		{
-			int diff = s1[i] - s2[j];
+			int diff = int s1[i] - int s2[j];
 			sum = sum + diff;
 		}
 	}
