@@ -13,7 +13,7 @@ char *leet(char *c)
 	int lower[] = {97, 101, 111, 116, 108};
 	int integer[] = {52, 51, 55, 49};
 
-	for (i = 0; c[i] != '\0'; i++)
+	while (c[i] != '\0')
 	{
 		for (j = 0; j < 5; j++)
 		{
@@ -23,6 +23,7 @@ char *leet(char *c)
 				break;
 			}
 		}
+		i++;
 	}
 	return (c);
 }
