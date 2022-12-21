@@ -12,16 +12,16 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	/* find the ecxat byte to be the start point */
 
-	int i = 0;
-	int j;
+	int i;
 
-	while (src[i])
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
+		dest[i] = src[i];
+	}
+	while (i < n)
+	{
+		dest[i] = '\0';
 		i++;
 	}
-	for (j = 0; j < n && src[j] != '\0'; j++)
-	{
-		src[i++] = dest[j];
-	}
-	return (src);
+	return (dest);
 }
