@@ -9,14 +9,14 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int i, j;
+	int i;
 	int sum = 0;
 
 	for (i = 0; s1[i]; i++)
 	{
-		for (j = 0; s2[j]; j++)
+		for (i = 0; s2[i]; i++)
 		{
-			int diff = int s1[i] - int s2[j];
+			int diff = int s1[i] - int s2[i];
 			sum = sum + diff;
 		}
 	}
