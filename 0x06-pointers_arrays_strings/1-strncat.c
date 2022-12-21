@@ -11,20 +11,17 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	/* loop over first string */
-	int i;
+	int i = 0;
+	int j;
 
-	for (i = 0; dest[i] != '\0'; i++)
+	while (dest[i])
 	{
-		_putchar(dest[i]);
+		i++;
 	}
-	_putchar(' ');
-	/* check if the src has n bytes or more, or not */
-	for(i = 0; src[i] != '\0'; i++)
+
+	for (j = 0; j <= n; j++)
 	{
-		if (i >= n)
-		{
-			_putchar(src[i]);
-		}
+		dest[i++] = src[j];
 	}
-	_putchar('\0');
+	return (dest);
 }
