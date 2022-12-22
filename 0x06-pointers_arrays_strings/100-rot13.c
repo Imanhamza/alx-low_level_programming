@@ -8,26 +8,21 @@
 
 char *rot13(char *c)
 {
-	int i = 0;
+	/* arrays for all the charcters and its code */
+	char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+	    output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i, j;
+	/* loop over the input to check if the string equal to one of it and replace with the output */
 
-	while (c[i] != '\0')
+	for (i = 0; input[i] != '\0'; i++)
 	{
-		while ((c[i] >= 65 && c[i] <= 90) ||
-				(c[i] >= 97 && c[i] <= 122))
+		for (j = 0; c[j] != '\0'; j++)
 		{
-			if ((c[i] >= 65 && c[i] <= 77) ||
-					(c[i] >= 97 && c[i] <= 109))
+			if (c[j] == input[i])
 			{
-				c[i] = c[i] + 13;
+				c[j] = output[i];
 			}
-			else
-			{
-				c[i] = c[i] - 13;
-			}
-			i++;
 		}
-		i++;
 	}
 	return (c);
 }
-
