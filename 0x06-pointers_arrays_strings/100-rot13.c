@@ -14,7 +14,7 @@ char *rot13(char *c)
 	int i, j;
 	/**
 	 * loop over the input to check if the string
-	 * equal to one of it and replace with the output 
+	 * equal to one of it and replace with the output
 	 */
 
 	for (i = 0; input[i] != '\0'; i++)
