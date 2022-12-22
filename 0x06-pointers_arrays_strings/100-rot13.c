@@ -17,13 +17,13 @@ char *rot13(char *c)
 	 * equal to one of it and replace with the output
 	 */
 
-	for (i = 0; input[i] != '\0'; i++)
+	for (i = 0; c[i] != '\0'; i++)
 	{
-		for (j = 0; c[j] != '\0'; j++)
+		for (j = 0; input[j] != '\0'; j++)
 		{
-			if (c[j] == input[i])
+			if (c[i] == input[j])
 			{
-				c[j] = output[i];
+				c[i] = output[j];
 			}
 		}
 	}
