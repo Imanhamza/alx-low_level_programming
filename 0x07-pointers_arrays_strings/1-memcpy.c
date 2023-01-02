@@ -4,7 +4,7 @@
  * @dest: new memory area
  * @src: old memory area
  * @n: number of bytes
- * return: *dest
+ * Return: dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
