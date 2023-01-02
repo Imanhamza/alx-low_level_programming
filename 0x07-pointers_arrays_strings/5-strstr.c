@@ -8,18 +8,27 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j;
-
-	for (i = 0; haystack[i] != '\0'; i++)
+	int i;
+	/* check if the needle not empty */
+	if (*needle == 0)
 	{
-		for (j = 0; needle[j] != '\0'; j++)
-		{
-			if (haystack[i] == needle[j])
-			{
-				return (needle);
-				break;
-			}
-		}
+		return (haystack);
 	}
-	return (0);
+
+	while (*haystack)
+	{
+		i = 0;
+		if (haystack[i] == needle[i])
+		{
+			do {
+				if (needle[i + 1] == '\0')
+				{
+					return (haystack);
+				}
+				i++;
+			} while (haystack[i] == needle[i]);
+		}
+		haystack++;
+	}
+	return ('\0');
 }
