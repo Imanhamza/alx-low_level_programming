@@ -51,7 +51,7 @@ int _palindrome(char *s, int i, int length)
 	{
 		return (1);
 	}
-	if (*(s + i) != *(s + length -1))
+	if (*(s + i) != *(s + length - 1))
 	{
 		return (0);
 	}
