@@ -31,6 +31,6 @@ int _square_root(int n, int i)
 	{
 		return (i);
 	}
-	return (_suqare_root(n, i + 1));
+	return (_square_root(n, i + 1));
 }
 
