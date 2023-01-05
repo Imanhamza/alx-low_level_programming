@@ -14,6 +14,7 @@ int _sqrt_recursion(int n)
 /**
  * _square_root - recuress the natural square root of a number
  * @n: integer
+ * @i: integer
  * Return: The square root
  */
 
@@ -29,4 +30,3 @@ int _square_root(int n, int i)
 	}
 	return (_square_root(n, i + 1));
 }
-
