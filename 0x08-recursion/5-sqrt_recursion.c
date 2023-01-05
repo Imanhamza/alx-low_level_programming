@@ -6,7 +6,6 @@
  * Return: A number
  */
 
-/* prototype of the Acual suare root function */
 int _square_root(int n, int i);
 
 int _sqrt_recursion(int n)
