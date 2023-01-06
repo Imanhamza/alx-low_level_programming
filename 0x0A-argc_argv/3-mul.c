@@ -4,7 +4,7 @@
 /**
  * main - a program that multiplies two numbers.
  * @argc: Number of attributes
- * @arv: Array
+ * @argv: Array
  * Return: Anumber
  */
 
