@@ -7,6 +7,6 @@
  * Desc: contains The prototypes of all Functions
  */
 
-
+int _putchar(char c);
 
 #endif
