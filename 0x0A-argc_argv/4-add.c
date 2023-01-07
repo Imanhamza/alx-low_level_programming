@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (is_num(argv[i]) == 1)
+			if (is_num(argv[i]) == 0)
 			{
 				sum = sum + atoi(argv[i]);
 			}
@@ -51,7 +51,7 @@ int is_num(char s[])
 	    length = strlen(s);
 	for (i = 0; i < length; i++)
 	{
-		if (isdigit(s[i]))
+		if (!isdigit(s[i]))
 		{
 			return (1);
 		}
