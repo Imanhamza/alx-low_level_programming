@@ -29,7 +29,7 @@ char *create_array(unsigned int size, char c)
 	{
 		arr[i] = c;
 	}
-	arr[size - 1] = '\0';
+	arr[size] = '\0';
 
 	return (arr);
 	free(arr);
