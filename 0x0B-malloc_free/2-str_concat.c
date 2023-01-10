@@ -12,24 +12,24 @@ char *str_concat(char *s1, char *s2)
 {
 	char *new;
 	unsigned int i, size1 = 0,
-	    size2 = 0;
+		     size2 = 0;
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-        /* size of the first string */
+	/* size of the first string */
 	for (i = 0; s1[i] != '\0'; i++)
 		size1++;
-        /* size of second string */
+	/* size of second string */
 	for (i = 0; s2[i] != '\0'; i++)
 		size2++;
 
-	new = malloc(size1 + size2);
+	new = malloc(size1 + size2 + 1);
 
 	for (i = 0; i < size1; i++)
 		new[i] = s1[i];
 
-	for (i= 0; i < size2; i++)
+	for (i = 0; i < size2; i++)
 		new[i + size1] = s2[i];
 
 	if (new == NULL)
