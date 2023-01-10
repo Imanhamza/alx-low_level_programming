@@ -31,10 +31,10 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i < size2; i++)
 		new[i + size1] = s2[i];
+	new[size1 + size2] = '\0';
 
 	if (new == NULL)
 		return (NULL);
-
-	new[size1 + size2] = '\0';
 	return (new);
+	free(new);
 }
