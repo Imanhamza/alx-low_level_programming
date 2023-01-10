@@ -33,5 +33,4 @@ char *_strdup(char *str)
 	sec_str[size] = '\0';
 
 	return (sec_str);
-	free(sec_str);
 }
