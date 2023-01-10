@@ -12,16 +12,15 @@
 char *_strdup(char *str)
 {
 	char *sec_str;
-	unsigned int i,
-		     j,
-		     size = 0;
-	/* find the lenght of the string */
-	for (j = 0; str[j] != '\0'; j++)
-		size++;
-
+	int i, j,
+	    size = 0;
 
 	if (str == NULL)
 		return (NULL);
+
+	/* find the lenght of the string */
+	for (j = 0; str[j] != '\0'; j++)
+		size++;
 
 	sec_str = malloc((size + 1) * sizeof(char));
 
@@ -30,7 +29,7 @@ char *_strdup(char *str)
 
 	for (i = 0; i < size; i++)
 		sec_str[i] = str[i];
-	sec_str[size] = '\0';
 
 	return (sec_str);
+	free(sec_str);
 }
