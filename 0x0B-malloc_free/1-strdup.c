@@ -29,7 +29,7 @@ char *_strdup(char *str)
 		return (NULL);
 
 	for (i = 0; i < size; i++)
-		sec_str[i] = str[i];
+		sec_str[i] = *(str + i);
 	sec_str[size] = '\0';
 
 	return (sec_str);
