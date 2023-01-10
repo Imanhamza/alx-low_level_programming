@@ -16,14 +16,14 @@ char *_strdup(char *str)
 		     j,
 		     size = 0;
 	/* find the lenght of the string */
-	for (j = 0; str[j] != '\0'; j++)
+	for (j = 0; str[j]; j++)
 		size++;
 
 
 	if (str == NULL)
 		return (NULL);
 
-	sec_str = malloc(size * sizeof(*str));
+	sec_str = malloc((j + 1) * sizeof(char));
 
 	if (sec_str == NULL)
 		return (NULL);
