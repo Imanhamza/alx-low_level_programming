@@ -16,21 +16,21 @@ char *_strdup(char *str)
 		     j,
 		     size = 0;
 	/* find the lenght of the string */
-	for (j = 0; str[j]; j++)
+	for (j = 0; str[j] != '\0'; j++)
 		size++;
 
 
 	if (str == NULL)
 		return (NULL);
 
-	sec_str = malloc((j + 1) * sizeof(char));
+	sec_str = malloc(size + 1);
 
 	if (sec_str == NULL)
 		return (NULL);
 
 	for (i = 0; i < size; i++)
-		sec_str[i] = *(str + i);
-	sec_str[i] = '\0';
+		sec_str[i] = str[i];
+	sec_str[size] = '\0';
 
 	return (sec_str);
 	free(sec_str);
