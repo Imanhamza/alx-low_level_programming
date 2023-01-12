@@ -39,6 +39,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	first[i] = '\0';
+	if (first == NULL)
+		return (NULL);
 	return (first);
 
 	free(first);
