@@ -19,7 +19,7 @@ int op_add(int a, int b)
  * Return: The diffrence of a and b
  */
 
-int op_sun(int a, int b)
+int op_sub(int a, int b)
 {
         return (a - b);
 }
