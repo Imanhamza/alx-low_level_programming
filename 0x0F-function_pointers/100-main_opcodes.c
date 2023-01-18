@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	{
 		printf("%02x", func[i] & 0xFF);
 		if (i != bytesNum - 1)
-			printf (" ");
+			printf(" ");
 	}
 	printf("\n");
 	return (0);
