@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	bytesNum = argv[1];
+	bytesNum = atoi(argv[1]);
 	if (bytesNum < 0)
 	{
 		printf("Error\n");
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	for (i = 0; i < bytesNum; i++)
 	{
 		printf("%02x", func[i] & 0xFF);
-		if (i != bytes - 1)
+		if (i != bytesNum - 1)
 			printf (" ");
 	}
 	printf("\n");
