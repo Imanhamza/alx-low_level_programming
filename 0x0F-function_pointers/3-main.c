@@ -14,8 +14,8 @@ int main(int argc, char *argv[])
 {
 	int num1,
 	    num2;
-	char *operator,
-	     func;
+	char *operator;
+	int (*func)(int, int);
 
 	/* chaeck for the presence of the arguments */
 	if (argc != 4)
