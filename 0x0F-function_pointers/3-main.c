@@ -28,12 +28,12 @@ int main(int argc, char *argv[])
 	num2 = atoi(argv[3]);
 
 	/* check fo the precensence of the operator */
-	if (get_op_func(operator) == NULL ||
-			operator != '\0')
+	if (get_op_func(operator) == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
+
 	printf("%d\n", get_op_func(operator)(num1, num2));
 	return (0);
 }
