@@ -14,7 +14,8 @@ int main(int argc, char *argv[])
 {
 	int num1,
 	    num2;
-	char *operator;
+	char *operator,
+	     func;
 
 	/* chaeck for the presence of the arguments */
 	if (argc != 4)
@@ -28,7 +29,8 @@ int main(int argc, char *argv[])
 	num2 = atoi(argv[3]);
 
 	/* check fo the precensence of the operator */
-	if (get_op_func(operator) == NULL)
+	func = get_op_func(operator);
+	if (!func)
 	{
 		printf("Error\n");
 		exit(99);
