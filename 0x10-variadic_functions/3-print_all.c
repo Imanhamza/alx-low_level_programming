@@ -8,6 +8,7 @@ void print_float(va_list arg);
 void print_string(va_list arg);
 /**
  * print_all - a function that prints anything.
+ * @format: type of data
  * Return: Nothing
  */
 
