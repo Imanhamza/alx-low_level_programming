@@ -14,10 +14,8 @@ void print_string(va_list arg);
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	int i = 0,
-	    j = 0;
+	int i = 0, j = 0;
 	char *separator = "";
-
 	func_print funcs[] = {
 		{"c", print_char},
 		{"i", print_int},
@@ -29,19 +27,25 @@ void print_all(const char * const format, ...)
 
 	while (format && format[i])
 	{
-		while (j < 4)
-		{
-			if (*funcs[j].item == format[i])
-			{
-				printf("%s", separator);
-				funcs[j].get_func(ap);
-				separator = ", ";
-			}
+		j = 0;
+		/**
+		 * 4 equals to the number of funcs present
+		 * so if j is less than four and our current
+		 * format is not equal to format in funcs
+		 * then j becomes j + 1
+		 */
+		while (j < 4 && (format[i] != *(funcs[j].item)))
 			j++;
+		if (j < 4)
+		{
+			printf("%s", separator);
+			funcs[j].get_func(ap);
+			separator = ", ";
 		}
 		i++;
 	}
 	printf("\n");
+
 	va_end(ap);
 }
 
