@@ -12,8 +12,8 @@ void print_all(const char * const format, ...);
 
 /**
  * struct print - New typedef struct
- * @item - data type
- * @get_func - a pointer to a function
+ * @item: data type
+ * @get_func: a pointer to a function
  */
 typedef struct print
 {
