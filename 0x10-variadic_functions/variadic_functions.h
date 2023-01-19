@@ -7,4 +7,15 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
+/**
+ * struct print - New typedef struct
+ * @item - data type
+ * @get_func - a pointer to a function
+ */
+typedef struct print
+{
+	char *item;
+	void (*get_func)(va_list arg);
+} func_print;
+
 #endif
