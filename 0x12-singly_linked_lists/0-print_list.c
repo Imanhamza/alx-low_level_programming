@@ -16,7 +16,7 @@ size_t print_list(const list_t *h)
 	if (h == NULL)
 		return (0);
 
-	while (h->next != NULL)
+	while (h)
 	{
 		/* check if the str is NULL or not */
 		if (h->s == NULL)
@@ -28,7 +28,6 @@ size_t print_list(const list_t *h)
 		/* increase the counter */
 		nodeCounter++;
 	}
-	printf("[%d] %s\n", h->len, h->s);
 
 	return (nodeCounter);
 }
