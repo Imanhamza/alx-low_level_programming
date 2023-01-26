@@ -19,17 +19,17 @@ size_t print_list(const list_t *h)
 	if (h->next != NULL)
 	{
 		/* check if the str is NULL or not */
-		if (h->str != NULL)
-			printf("[%d] %s\n", h->len, h->str);
+		if (h->s != NULL)
+			printf("[%d] %s\n", h->len, h->s);
 		else
-			printf("[%d] %s\n", h->len, h->str);
+			printf("[%d] %s\n", h->len, h->s);
 		/* move to the next node */
 		h = h->next;
 		/* increase the counter */
 		nodeCounter++;
 	}
 	/* print the last node */
-	printf("[%d] %s\n", h->len, h->str);
+	printf("[%d] %s\n", h->len, h->s);
 
 	return (nodeCounter);
 }
