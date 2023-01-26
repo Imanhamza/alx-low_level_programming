@@ -10,7 +10,7 @@
 size_t print_list(const list_t *h)
 {
 	/* start countting the number of nodes */
-	list_t nodeCounter = 1;
+	size_t nodeCounter = 1;
 
 	/* if there is no nodes return 0 */
 	if (h == NULL)
@@ -22,7 +22,7 @@ size_t print_list(const list_t *h)
 		if (h->s != NULL)
 			printf("[%d] %s\n", h->len, h->s);
 		else
-			printf("[%d] %s\n", h->len, h->s);
+			printf("[%d] %s\n", 0, "(nil)");
 		/* move to the next node */
 		h = h->next;
 		/* increase the counter */
