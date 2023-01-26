@@ -19,10 +19,10 @@ size_t print_list(const list_t *h)
 	if (h->next != NULL)
 	{
 		/* check if the str is NULL or not */
-		if (h->s != NULL)
-			printf("[%d] %s\n", h->len, h->s);
-		else
+		if (h->s == NULL)
 			printf("[%d] %s\n", 0, "(nil)");
+		else
+			printf("[%d] %s\n", h->len, h->s);
 		/* move to the next node */
 		h = h->next;
 		/* increase the counter */
