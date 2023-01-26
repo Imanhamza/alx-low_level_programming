@@ -12,10 +12,6 @@ size_t print_list(const list_t *h)
 	/* start countting the number of nodes */
 	size_t nodeCounter = 0;
 
-	/* if there is no nodes return 0 */
-	if (h == NULL)
-		return (0);
-
 	while (h)
 	{
 		/* check if the str is NULL or not */
