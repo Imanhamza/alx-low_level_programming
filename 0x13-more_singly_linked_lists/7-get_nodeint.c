@@ -4,7 +4,7 @@
  * get_nodeint_at_index - a function that returns
  * the nth node of a listint_t linked list.
  * @head: the head of the linked list
- * index: the index of the node wanted
+ * @index: the index of the node wanted
  * Return: th nth node or NULL
  */
 
