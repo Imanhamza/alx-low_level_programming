@@ -10,7 +10,7 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	/*find the matched bits between two int */
-	unsigned int f = n ^ m;
+	unsigned long int f = n ^ m;
 	int counter = 0; /* to count the number of the bits */
 
 	while (f)
