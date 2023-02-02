@@ -11,10 +11,10 @@ unsigned int _atoi(char c);
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num = 0,
-		     base = 1,
 		     result = 0;
 	int i,
-	    strLen = 0;
+	    strLen = 0,
+	    base = 1;
 
 	while (b[strLen] != '\0')
 		strLen++;
