@@ -13,8 +13,8 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	/* declare the variable for open read and write
-	 * calls and the buffer for letters*/
+	/* declare the variable for open read and write*/
+	 /* calls and the buffer for letters*/
 	ssize_t o,
 		r,
 		w;
@@ -38,10 +38,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (o != 1 || r != 1 || w != 1 || w != r)
 	{
 		free(buffer);
-		return(0);
+		return (0);
 	}
 	free(buffer);
 	close(o);
 
-	return(w);
+	return (w);
 }
