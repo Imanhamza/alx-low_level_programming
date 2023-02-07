@@ -38,6 +38,7 @@ int main(int argc, char *argv[])
 	}
 	m = close(r);
 	n = close(w);
+
 	if (m == -1 || n == -1)
 	{
 		if (m == -1)
