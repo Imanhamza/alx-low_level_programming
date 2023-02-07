@@ -20,7 +20,7 @@ int create_file(const char *filename, char *text_content)
 		strLen++;
 	/* set the values to be read and write */
 	o = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	w = write(o, text_content, sreLen);
+	w = write(o, text_content, strLen);
 
 	/* check if the open and write doesnot fail */
 	if (o == -1 || w == -1)
