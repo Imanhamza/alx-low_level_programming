@@ -10,7 +10,8 @@
 int main(int argc, char *argv[])
 {
 	int r, w,
-	    m, n;
+	    m, n, x;
+	char bufffer[BUFSIZ];
 
 	/* check th number of arguments */
 	if (argc != 3)
@@ -26,11 +27,21 @@ int main(int argc, char *argv[])
 		return (98);
 	}
 	w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (w == -1)
+	while ((x = read(r, buffer, BUFSIZ)) > 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		exit(99);
+		if (w == -1 || write(w, buffer, x) != x)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			close(fd_r);
+			exit(99);
+		}
 	}
+	if (x == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
+
 	m = close(r);
 	n = close(w);
 	if (m == -1 || n == -1)
