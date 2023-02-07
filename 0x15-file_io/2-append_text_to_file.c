@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * ppend_text_to_file - a function that appends text at the end of a file.
+ * append_text_to_file - a function that appends text at the end of a file.
  * @filename: The name file
  * @text_content: terminated string to add at the end of the file
- * Rturn: 1 on success and -1 on failure
+ * Return: 1 on success and -1 on failure
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
