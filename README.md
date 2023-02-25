@@ -19,3 +19,6 @@ This repo consists of all project assgined by [ALX Africa](https://www.alxafrica
 - [0x05](./0x05-pointers_arrays_strings) : Pointers, arrays and strings.
 - [0x06](./0x06-pointers_arrays_strings) : More pointers, arrays and strings.
 - [0x07](./0x07-pointers_arrays_strings) : Even more pointers, arrays and strings.
+- [0x08](./0x08-recursion) : Recursion.
+- [0x09](./0x09-static_libraries) : C static libraries.
+- [0x0A](./0x0A-argc_argv) : Arguments and their declaration.
