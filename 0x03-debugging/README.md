@@ -11,7 +11,7 @@ ___
 | **File** |**Description**|
 |-----|----|
 |[Header File](./main.h)| File contain all the prototypes of all function used.|
-|[Main file 1](./0-main.c)| Test that the function positive_or_negative() gives the correct output when given a case of 0.|
+|[Main file 1](./0-main.c)| Test that the function `positive_or_negative()` gives the correct output when given a case of 0.|
 |[Main File 2](./1-main.c)| An updated version of the same file had some issues|
 |[Largest of Three](./2-largest_number.c)| A program prints the largest of three integers.|
 |[Leap year](./3-print_remaining_days.c)| A file contains a fixation the `print_remaining_days()` function so that the output works correctly for all dates and all leap years.|
