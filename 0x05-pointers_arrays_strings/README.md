@@ -1,4 +1,4 @@
-0. 98 Battery st.# 0x05. C - Pointers, arrays and strings
+# 0x05. C - Pointers, arrays and strings
 ---
 > A pointer is a variable which contains a memory address.  
 > Array in C can be defined as a method of clubbing multiple entities of similar type into a larger group.  
@@ -19,4 +19,3 @@
 |[A string out](./3-puts.c)| A function that prints a string, followed by a new line, to `stdout`.|
 |[Reverse gear](./4-print_rev.c)| A function that prints a string, in reverse.|
 |[Reverser](./5-rev_string.c)| A function that reverses a string.|
-|
