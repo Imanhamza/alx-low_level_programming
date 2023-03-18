@@ -5,10 +5,10 @@
 > String are special kind of arrays.
 ---
 ### Resources
-* [`C - Arrays`](https://intranet.alxswe.com/rltoken/PVi2XMuApOK3jfhsoqsyXw).
-* [`C - Pointers`](https://intranet.alxswe.com/rltoken/oyHybzYBeFiLUMALpb_usA).
-* [`C - Strings`](https://intranet.alxswe.com/rltoken/sUeh9qDyW9pePOfJIpx_Bw).
-* [`Memory Layout`](https://intranet.alxswe.com/rltoken/0k6CD2ZMzSFOMUxMOBiAlQ).
+* [`C - Arrays`](https://www.tutorialspoint.com/cprogramming/c_arrays.htm).
+* [`C - Pointers`](https://www.tutorialspoint.com/cprogramming/c_pointers.htm).
+* [`C - Strings`](https://www.tutorialspoint.com/cprogramming/c_strings.htm).
+* [`Memory Layout`](https://aticleworld.com/memory-layout-of-c-program/).
 ---
 ### Files Structure
 |**File**|**Discription**|
