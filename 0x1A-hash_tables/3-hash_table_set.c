@@ -19,7 +19,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	/* Allocate a memory for the new table */
-	new_table =  malloc(sizeof(hash_table_t));
+	new_table =  malloc(sizeof(hash_node_t));
 	if (new_table == NULL)
 	{
 		free(new_table);
@@ -29,10 +29,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	/* duplicate the value */
 	str_dup = strdup(value);
 	if (str_dup == NULL)
-	{
-		free(str_dup);
 		return (0);
-	}
 
 	/* get the index of the key from previous function key_index */
 	index =  key_index((const unsigned char *)key, ht->size);
@@ -42,7 +39,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (strcmp(ht->array[i]-> key, key) == 0)
 		{
 			ht->array[i]->value = str_dup;
-			free(ht->array[i]->value);
 			return (1);
 		}
 	}
