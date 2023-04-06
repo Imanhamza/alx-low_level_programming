@@ -9,6 +9,7 @@
 void hash_table_delete(hash_table_t *ht)
 {
 	hash_node_t *newNode;
+	hash_table_t *newTable = ht;
 	unsigned long int i;
 
 	/* check if the table and it components is present */
@@ -30,6 +31,6 @@ void hash_table_delete(hash_table_t *ht)
 		}
 	}
 
-	free(ht->array);
-	free(ht);
+	free(newTable->array);
+	free(newTable);
 }
