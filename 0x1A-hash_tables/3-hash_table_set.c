@@ -7,7 +7,6 @@
  * @value: value to be added
  * Return: 1 if it succeeded, 0 otherwise
  */
-
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *new_table;
@@ -29,19 +28,21 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index =  key_index((const unsigned char *)key, ht->size);
 	for (i = index; ht->array[i]; i++)
 	{
-		if (strcmp(ht->array[i]-> key, key) == 0)
+		if (strcmp(ht->array[i]->key, key) == 0)
 		{
+			free(ht->array[i]->value)
 			ht->array[i]->value = str_dup;
 			return (1);
 		}
 	}
 	new_table->key = strdup(key);
         if (new_table->key == 0)
+	{
+		free(new_table->key);
                 return (0);
-
+	}
 	new_table->value = str_dup;
 	new_table->next = ht->array[index];
 	ht->array[index] = new_table;
-
 	return (1);
 }
