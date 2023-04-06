@@ -17,31 +17,28 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	/* key can not be an empty string, ht can't be null */
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (0);
-
-	/* Allocate a memory for the new table */
 	new_table =  malloc(sizeof(hash_node_t));
 	if (new_table == NULL)
 	{
 		free(new_table);
 		return (0);
 	}
-
-	/* duplicate the value */
 	str_dup = strdup(value);
 	if (str_dup == NULL)
 		return (0);
-
-	/* get the index of the key from previous function key_index */
 	index =  key_index((const unsigned char *)key, ht->size);
-	for ( i = index; ht->array[i]; i++)
+	for (i = index; ht->array[i]; i++)
 	{
-		/* compare the key to the current array key */
 		if (strcmp(ht->array[i]-> key, key) == 0)
 		{
 			ht->array[i]->value = str_dup;
 			return (1);
 		}
 	}
+	new_table->key = strdup(key);
+        if (new_table->key == 0)
+                return (0);
+
 	new_table->value = str_dup;
 	new_table->next = ht->array[index];
 	ht->array[index] = new_table;
