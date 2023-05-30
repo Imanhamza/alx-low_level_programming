@@ -6,7 +6,7 @@ OBJ = $(SRC:.c=.o)
 NAME = school
 
 # Remove program
-RM = rm
+# RM = rm
 
 # fav compiler flags
 CFLAGS = -Wall -Werror -Wextra -pedantic
