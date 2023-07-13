@@ -50,12 +50,13 @@ int advanced_binary_recursive(int *array, size_t left, size_t right, int value)
 				return advanced_binary_recursive(
 						array, left, mid, value);
 		}
-			if (array[mid] < value)
-				return advanced_binary_recursive(
-						array, mid + 1, right, value);
-			else
-				return advanced_binary_recursive(
-						array, left, mid - 1, value);
+
+		if (array[mid] < value)
+			return advanced_binary_recursive(
+					array, mid + 1, right, value);
+		else
+			return advanced_binary_recursive(
+					array, left, mid - 1, value);
 	}
 	return (-1);
 }
